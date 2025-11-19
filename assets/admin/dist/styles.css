@@ -64,6 +64,7 @@ hr {
 pre {
   font-family: monospace, monospace; /* 1 */
   font-size: 1em; /* 2 */
+   font-display: swap;
 }
 
 /* Text-level semantics
@@ -363,6 +364,7 @@ template {
 html {
   box-sizing: border-box; /* 1 */
   font-family: sans-serif; /* 2 */
+   font-display: swap;
 }
 
 *,

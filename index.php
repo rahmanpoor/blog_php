@@ -27,7 +27,7 @@
   <div class="container">
     <!-- Logo -->
     <a class="navbar-brand" href="index.html">
-      <img class="logo-main" src="images/logo.svg" alt="logo" />
+      <img class="logo-main" src="assets/site/images/logo.svg" alt="logo" />
     </a>
     <!-- Toogle Button -->
     <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#mainNav">
@@ -72,7 +72,7 @@
         <article class="featured-post">
           <div class="featured-post-content">
             <div class="featured-post-author">
-              <img src="images/author.png" alt="author" />
+              <img src="assets/site/images/author.png" alt="author" />
               <p>By <span>Mary Astor</span></p>
             </div>
             <a href="single-blog.html" class="featured-post-title">
@@ -86,7 +86,7 @@
             </ul>
           </div>
           <div class="featured-post-thumb">
-            <img src="images/featured-post.jpg" alt="feature-post-thumb" />
+            <img src="assets/site/images/featured-post.jpg" alt="feature-post-thumb" />
           </div>
         </article>
       </div>
@@ -104,7 +104,7 @@
         </div>
         <article class="blog-post">
           <div class="blog-post-thumb">
-            <img src="images/blog/blog-thum-1.png" alt="blog-thum" />
+            <img src="assets/site/images/blog/blog-thum-1.png" alt="blog-thum" />
           </div>
           <div class="blog-post-content">
             <div class="blog-post-tag">
@@ -132,36 +132,7 @@
         <article class="blog-post">
           <div class="blog-post-thumb">
             <a href="single-blog.html">
-              <img src="images/blog/blog-thum-2.png" alt="blog-thum" /></a>
-          </div>
-          <div class="blog-post-content">
-            <div class="blog-post-tag">
-              <a href="category.html">Travel</a>
-            </div>
-            <div class="blog-post-title">
-              <a href="single-blog.html">Five Things You Need to Know to Start Your Day</a>
-            </div>
-            <div class="blog-post-meta">
-              <ul>
-                <li>By <a href="about.html">Mary Astor</a></li>
-                <li>
-                  <i class="fa fa-clock-o"></i>
-                  October 19, 2020 - 2 min
-                </li>
-              </ul>
-            </div>
-
-            <p>
-              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-              nonumy.
-            </p>
-            <a href="single-blog.html" class="blog-post-action">read more <i class="fa fa-angle-right"></i></a>
-          </div>
-        </article>
-        <article class="blog-post">
-          <div class="blog-post-thumb">
-            <a href="single-blog.html">
-              <img src="images/blog/blog-thum-3.png" alt="blog-thum" /></a>
+              <img src="assets/site/images/blog/blog-thum-2.png" alt="blog-thum" /></a>
           </div>
           <div class="blog-post-content">
             <div class="blog-post-tag">
@@ -190,7 +161,7 @@
         <article class="blog-post">
           <div class="blog-post-thumb">
             <a href="single-blog.html">
-              <img src="images/blog/blog-thum-4.png" alt="blog-thum" /></a>
+              <img src="assets/site/images/blog/blog-thum-3.png" alt="blog-thum" /></a>
           </div>
           <div class="blog-post-content">
             <div class="blog-post-tag">
@@ -219,7 +190,7 @@
         <article class="blog-post">
           <div class="blog-post-thumb">
             <a href="single-blog.html">
-              <img src="images/blog/blog-thum-5.png" alt="blog-thum" /></a>
+              <img src="assets/site/images/blog/blog-thum-4.png" alt="blog-thum" /></a>
           </div>
           <div class="blog-post-content">
             <div class="blog-post-tag">
@@ -248,7 +219,7 @@
         <article class="blog-post">
           <div class="blog-post-thumb">
             <a href="single-blog.html">
-              <img src="images/blog/blog-thum-6.png" alt="blog-thum" /></a>
+              <img src="assets/site/images/blog/blog-thum-5.png" alt="blog-thum" /></a>
           </div>
           <div class="blog-post-content">
             <div class="blog-post-tag">
@@ -277,7 +248,36 @@
         <article class="blog-post">
           <div class="blog-post-thumb">
             <a href="single-blog.html">
-              <img src="images/blog/blog-thum-7.png" alt="blog-thum" /></a>
+              <img src="assets/site/images/blog/blog-thum-6.png" alt="blog-thum" /></a>
+          </div>
+          <div class="blog-post-content">
+            <div class="blog-post-tag">
+              <a href="category.html">Travel</a>
+            </div>
+            <div class="blog-post-title">
+              <a href="single-blog.html">Five Things You Need to Know to Start Your Day</a>
+            </div>
+            <div class="blog-post-meta">
+              <ul>
+                <li>By <a href="about.html">Mary Astor</a></li>
+                <li>
+                  <i class="fa fa-clock-o"></i>
+                  October 19, 2020 - 2 min
+                </li>
+              </ul>
+            </div>
+
+            <p>
+              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+              nonumy.
+            </p>
+            <a href="single-blog.html" class="blog-post-action">read more <i class="fa fa-angle-right"></i></a>
+          </div>
+        </article>
+        <article class="blog-post">
+          <div class="blog-post-thumb">
+            <a href="single-blog.html">
+              <img src="assets/site/images/blog/blog-thum-7.png" alt="blog-thum" /></a>
           </div>
           <div class="blog-post-content">
             <div class="blog-post-tag">
@@ -328,10 +328,10 @@
           <div class="latest-widget">
             <div class="latest-widget-thum">
               <a href="single-blog.html">
-                <img src="images/blog/blog-thum-8.png" alt="blog-thum" /></a>
+                <img src="assets/site/images/blog/blog-thum-8.png" alt="blog-thum" /></a>
               <div class="icon">
                 <a href="single-blog.html">
-                  <img src="images/blog/icon.svg" alt="icon" /></a>
+                  <img src="assets/site/images/blog/icon.svg" alt="icon" /></a>
               </div>
             </div>
             <div class="latest-widget-content">
@@ -351,10 +351,10 @@
           <div class="latest-widget">
             <div class="latest-widget-thum">
               <a href="single-blog.html">
-                <img src="images/blog/blog-thum-9.png" alt="blog-thum" /></a>
+                <img src="assets/site/images/blog/blog-thum-9.png" alt="blog-thum" /></a>
               <div class="icon">
                 <a href="single-blog.html">
-                  <img src="images/blog/icon.svg" alt="icon" /></a>
+                  <img src="assets/site/images/blog/icon.svg" alt="icon" /></a>
               </div>
             </div>
             <div class="latest-widget-content">
@@ -374,10 +374,10 @@
           <div class="latest-widget">
             <div class="latest-widget-thum">
               <a href="single-blog.html">
-                <img src="images/blog/blog-thum-10.png" alt="blog-thum" /></a>
+                <img src="assets/site/images/blog/blog-thum-10.png" alt="blog-thum" /></a>
               <div class="icon">
                 <a href="single-blog.html">
-                  <img src="images/blog/icon.svg" alt="icon" /></a>
+                  <img src="assets/site/images/blog/icon.svg" alt="icon" /></a>
               </div>
             </div>
             <div class="latest-widget-content">
@@ -397,10 +397,10 @@
           <div class="latest-widget">
             <div class="latest-widget-thum">
               <a href="single-blog.html">
-                <img src="images/blog/blog-thum-11.png" alt="blog-thum" /></a>
+                <img src="assets/site/images/blog/blog-thum-11.png" alt="blog-thum" /></a>
               <div class="icon">
                 <a href="single-blog.html">
-                  <img src="images/blog/icon.svg" alt="icon" /></a>
+                  <img src="assets/site/images/blog/icon.svg" alt="icon" /></a>
               </div>
             </div>
             <div class="latest-widget-content">
@@ -434,22 +434,22 @@
         <div class="instagram-item">
 
           <div class="instagram-item-thum">
-            <img src="images/blog/case-studies-1.png" alt="image">
+            <img src="assets/site/images/blog/case-studies-1.png" alt="image">
           </div>
           <div class="instagram-item-thum">
-            <img src="images/blog/case-studies-2.png" alt="image">
+            <img src="assets/site/images/blog/case-studies-2.png" alt="image">
           </div>
           <div class="instagram-item-thum">
-            <img src="images/blog/case-studies-3.png" alt="image">
+            <img src="assets/site/images/blog/case-studies-3.png" alt="image">
           </div>
           <div class="instagram-item-thum">
-            <img src="images/blog/case-studies-4.png" alt="image">
+            <img src="assets/site/images/blog/case-studies-4.png" alt="image">
           </div>
           <div class="instagram-item-thum">
-            <img src="images/blog/case-studies-5.png" alt="image">
+            <img src="assets/site/images/blog/case-studies-5.png" alt="image">
           </div>
           <div class="instagram-item-thum">
-            <img src="images/blog/case-studies-6.png" alt="image">
+            <img src="assets/site/images/blog/case-studies-6.png" alt="image">
           </div>
         </div>
       </div>
@@ -462,7 +462,7 @@
     <div class="row">
       <div class="col-lg-6 mx-auto text-center">
         <div class="footer-logo">
-          <img src="images/logo.svg" alt="logo" />
+          <img src="assets/site/images/logo.svg" alt="logo" />
         </div>
       </div>
     </div>
