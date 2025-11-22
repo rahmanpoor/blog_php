@@ -26,7 +26,7 @@
 <nav class="main-nav navbar navbar-expand-lg">
   <div class="container">
     <!-- Logo -->
-    <a class="navbar-brand" href="index.html">
+    <a class="navbar-brand" href="index.php">
       <img class="logo-main" src="assets/site/images/logo.svg" alt="logo" />
     </a>
     <!-- Toogle Button -->
@@ -39,13 +39,13 @@
       <!-- Navigation Links -->
       <ul class="navbar-nav ml-auto">
         <li class="nav-item">
-          <a class="nav-link" href="index.html">Home </a>
+          <a class="nav-link" href="index.php">Home </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="about.html">About </a>
+          <a class="nav-link" href="about.php">About </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="contact.html">Contact</a>
+          <a class="nav-link" href="contact.php">Contact</a>
         </li>
       </ul>
       <!-- Social Link -->
@@ -75,7 +75,7 @@
               <img src="assets/site/images/author.png" alt="author" />
               <p>By <span>Mary Astor</span></p>
             </div>
-            <a href="single-blog.html" class="featured-post-title">
+            <a href="single-blog.php" class="featured-post-title">
               Every Next Level of Your Life Will Demand
             </a>
             <ul class="featured-post-meta">
@@ -108,14 +108,14 @@
           </div>
           <div class="blog-post-content">
             <div class="blog-post-tag">
-              <a href="category.html">Travel</a>
+              <a href="category.php">Travel</a>
             </div>
             <div class="blog-post-title">
-              <a href="single-blog.html">Five Things You Need to Know to Start Your Day</a>
+              <a href="single-blog.php">Five Things You Need to Know to Start Your Day</a>
             </div>
             <div class="blog-post-meta">
               <ul>
-                <li>By <a href="about.html">Mary Astor</a></li>
+                <li>By <a href="about.php">Mary Astor</a></li>
                 <li>
                   <i class="fa fa-clock-o"></i>
                   October 19, 2020 - 2 min
@@ -126,24 +126,24 @@
               Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
               nonumy.
             </p>
-            <a href="single-blog.html" class="blog-post-action">read more <i class="fa fa-angle-right"></i></a>
+            <a href="single-blog.php" class="blog-post-action">read more <i class="fa fa-angle-right"></i></a>
           </div>
         </article>
         <article class="blog-post">
           <div class="blog-post-thumb">
-            <a href="single-blog.html">
+            <a href="single-blog.php">
               <img src="assets/site/images/blog/blog-thum-2.png" alt="blog-thum" /></a>
           </div>
           <div class="blog-post-content">
             <div class="blog-post-tag">
-              <a href="category.html">Travel</a>
+              <a href="category.php">Travel</a>
             </div>
             <div class="blog-post-title">
-              <a href="single-blog.html">Five Things You Need to Know to Start Your Day</a>
+              <a href="single-blog.php">Five Things You Need to Know to Start Your Day</a>
             </div>
             <div class="blog-post-meta">
               <ul>
-                <li>By <a href="about.html">Mary Astor</a></li>
+                <li>By <a href="about.php">Mary Astor</a></li>
                 <li>
                   <i class="fa fa-clock-o"></i>
                   October 19, 2020 - 2 min
@@ -155,24 +155,24 @@
               Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
               nonumy.
             </p>
-            <a href="single-blog.html" class="blog-post-action">read more <i class="fa fa-angle-right"></i></a>
+            <a href="single-blog.php" class="blog-post-action">read more <i class="fa fa-angle-right"></i></a>
           </div>
         </article>
         <article class="blog-post">
           <div class="blog-post-thumb">
-            <a href="single-blog.html">
+            <a href="single-blog.php">
               <img src="assets/site/images/blog/blog-thum-3.png" alt="blog-thum" /></a>
           </div>
           <div class="blog-post-content">
             <div class="blog-post-tag">
-              <a href="category.html">Travel</a>
+              <a href="category.php">Travel</a>
             </div>
             <div class="blog-post-title">
-              <a href="single-blog.html">Five Things You Need to Know to Start Your Day</a>
+              <a href="single-blog.php">Five Things You Need to Know to Start Your Day</a>
             </div>
             <div class="blog-post-meta">
               <ul>
-                <li>By <a href="about.html">Mary Astor</a></li>
+                <li>By <a href="about.php">Mary Astor</a></li>
                 <li>
                   <i class="fa fa-clock-o"></i>
                   October 19, 2020 - 2 min
@@ -184,24 +184,24 @@
               Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
               nonumy.
             </p>
-            <a href="single-blog.html" class="blog-post-action">read more <i class="fa fa-angle-right"></i></a>
+            <a href="single-blog.php" class="blog-post-action">read more <i class="fa fa-angle-right"></i></a>
           </div>
         </article>
         <article class="blog-post">
           <div class="blog-post-thumb">
-            <a href="single-blog.html">
+            <a href="single-blog.php">
               <img src="assets/site/images/blog/blog-thum-4.png" alt="blog-thum" /></a>
           </div>
           <div class="blog-post-content">
             <div class="blog-post-tag">
-              <a href="category.html">Travel</a>
+              <a href="category.php">Travel</a>
             </div>
             <div class="blog-post-title">
-              <a href="single-blog.html">Five Things You Need to Know to Start Your Day</a>
+              <a href="single-blog.php">Five Things You Need to Know to Start Your Day</a>
             </div>
             <div class="blog-post-meta">
               <ul>
-                <li>By <a href="about.html">Mary Astor</a></li>
+                <li>By <a href="about.php">Mary Astor</a></li>
                 <li>
                   <i class="fa fa-clock-o"></i>
                   October 19, 2020 - 2 min
@@ -213,24 +213,24 @@
               Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
               nonumy.
             </p>
-            <a href="single-blog.html" class="blog-post-action">read more <i class="fa fa-angle-right"></i></a>
+            <a href="single-blog.php" class="blog-post-action">read more <i class="fa fa-angle-right"></i></a>
           </div>
         </article>
         <article class="blog-post">
           <div class="blog-post-thumb">
-            <a href="single-blog.html">
+            <a href="single-blog.php">
               <img src="assets/site/images/blog/blog-thum-5.png" alt="blog-thum" /></a>
           </div>
           <div class="blog-post-content">
             <div class="blog-post-tag">
-              <a href="category.html">Travel</a>
+              <a href="category.php">Travel</a>
             </div>
             <div class="blog-post-title">
-              <a href="single-blog.html">Five Things You Need to Know to Start Your Day</a>
+              <a href="single-blog.php">Five Things You Need to Know to Start Your Day</a>
             </div>
             <div class="blog-post-meta">
               <ul>
-                <li>By <a href="about.html">Mary Astor</a></li>
+                <li>By <a href="about.php">Mary Astor</a></li>
                 <li>
                   <i class="fa fa-clock-o"></i>
                   October 19, 2020 - 2 min
@@ -242,24 +242,24 @@
               Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
               nonumy.
             </p>
-            <a href="single-blog.html" class="blog-post-action">read more <i class="fa fa-angle-right"></i></a>
+            <a href="single-blog.php" class="blog-post-action">read more <i class="fa fa-angle-right"></i></a>
           </div>
         </article>
         <article class="blog-post">
           <div class="blog-post-thumb">
-            <a href="single-blog.html">
+            <a href="single-blog.php">
               <img src="assets/site/images/blog/blog-thum-6.png" alt="blog-thum" /></a>
           </div>
           <div class="blog-post-content">
             <div class="blog-post-tag">
-              <a href="category.html">Travel</a>
+              <a href="category.php">Travel</a>
             </div>
             <div class="blog-post-title">
-              <a href="single-blog.html">Five Things You Need to Know to Start Your Day</a>
+              <a href="single-blog.php">Five Things You Need to Know to Start Your Day</a>
             </div>
             <div class="blog-post-meta">
               <ul>
-                <li>By <a href="about.html">Mary Astor</a></li>
+                <li>By <a href="about.php">Mary Astor</a></li>
                 <li>
                   <i class="fa fa-clock-o"></i>
                   October 19, 2020 - 2 min
@@ -271,24 +271,24 @@
               Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
               nonumy.
             </p>
-            <a href="single-blog.html" class="blog-post-action">read more <i class="fa fa-angle-right"></i></a>
+            <a href="single-blog.php" class="blog-post-action">read more <i class="fa fa-angle-right"></i></a>
           </div>
         </article>
         <article class="blog-post">
           <div class="blog-post-thumb">
-            <a href="single-blog.html">
+            <a href="single-blog.php">
               <img src="assets/site/images/blog/blog-thum-7.png" alt="blog-thum" /></a>
           </div>
           <div class="blog-post-content">
             <div class="blog-post-tag">
-              <a href="category.html">Travel</a>
+              <a href="category.php">Travel</a>
             </div>
             <div class="blog-post-title">
-              <a href="single-blog.html">Five Things You Need to Know to Start Your Day</a>
+              <a href="single-blog.php">Five Things You Need to Know to Start Your Day</a>
             </div>
             <div class="blog-post-meta">
               <ul>
-                <li>By <a href="about.html">Mary Astor</a></li>
+                <li>By <a href="about.php">Mary Astor</a></li>
                 <li>
                   <i class="fa fa-clock-o"></i>
                   October 19, 2020 - 2 min
@@ -299,7 +299,7 @@
               Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
               nonumy.
             </p>
-            <a href="single-blog.html" class="blog-post-action">read more <i class="fa fa-angle-right"></i></a>
+            <a href="single-blog.php" class="blog-post-action">read more <i class="fa fa-angle-right"></i></a>
           </div>
         </article>
         <div class="blog-post-pagination">
@@ -327,16 +327,16 @@
           </div>
           <div class="latest-widget">
             <div class="latest-widget-thum">
-              <a href="single-blog.html">
+              <a href="single-blog.php">
                 <img src="assets/site/images/blog/blog-thum-8.png" alt="blog-thum" /></a>
               <div class="icon">
-                <a href="single-blog.html">
+                <a href="single-blog.php">
                   <img src="assets/site/images/blog/icon.svg" alt="icon" /></a>
               </div>
             </div>
             <div class="latest-widget-content">
               <div class="content-title">
-                <a href="single-blog.html">Five Things You Need to Know to Start Your Day</a>
+                <a href="single-blog.php">Five Things You Need to Know to Start Your Day</a>
               </div>
               <div class="content-meta">
                 <ul>
@@ -350,16 +350,16 @@
           </div>
           <div class="latest-widget">
             <div class="latest-widget-thum">
-              <a href="single-blog.html">
+              <a href="single-blog.php">
                 <img src="assets/site/images/blog/blog-thum-9.png" alt="blog-thum" /></a>
               <div class="icon">
-                <a href="single-blog.html">
+                <a href="single-blog.php">
                   <img src="assets/site/images/blog/icon.svg" alt="icon" /></a>
               </div>
             </div>
             <div class="latest-widget-content">
               <div class="content-title">
-                <a href="single-blog.html">Five Things You Need to Know to Start Your Day</a>
+                <a href="single-blog.php">Five Things You Need to Know to Start Your Day</a>
               </div>
               <div class="content-meta">
                 <ul>
@@ -373,16 +373,16 @@
           </div>
           <div class="latest-widget">
             <div class="latest-widget-thum">
-              <a href="single-blog.html">
+              <a href="single-blog.php">
                 <img src="assets/site/images/blog/blog-thum-10.png" alt="blog-thum" /></a>
               <div class="icon">
-                <a href="single-blog.html">
+                <a href="single-blog.php">
                   <img src="assets/site/images/blog/icon.svg" alt="icon" /></a>
               </div>
             </div>
             <div class="latest-widget-content">
               <div class="content-title">
-                <a href="single-blog.html">Five Things You Need to Know to Start Your Day</a>
+                <a href="single-blog.php">Five Things You Need to Know to Start Your Day</a>
               </div>
               <div class="content-meta">
                 <ul>
@@ -396,16 +396,16 @@
           </div>
           <div class="latest-widget">
             <div class="latest-widget-thum">
-              <a href="single-blog.html">
+              <a href="single-blog.php">
                 <img src="assets/site/images/blog/blog-thum-11.png" alt="blog-thum" /></a>
               <div class="icon">
-                <a href="single-blog.html">
+                <a href="single-blog.php">
                   <img src="assets/site/images/blog/icon.svg" alt="icon" /></a>
               </div>
             </div>
             <div class="latest-widget-content">
               <div class="content-title">
-                <a href="single-blog.html">Five Things You Need to Know to Start Your Day</a>
+                <a href="single-blog.php">Five Things You Need to Know to Start Your Day</a>
               </div>
               <div class="content-meta">
                 <ul>
@@ -471,13 +471,13 @@
         <div class="footer-nav">
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link" href="index.html">Home </a>
+              <a class="nav-link" href="index.php">Home </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="about.html">About </a>
+              <a class="nav-link" href="about.php">About </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="contact.html">Contact</a>
+              <a class="nav-link" href="contact.php">Contact</a>
             </li>
           </ul>
         </div>
