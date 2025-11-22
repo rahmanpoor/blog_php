@@ -1,6 +1,6 @@
 <?php
 
-define('BASE_URL', 'http://localhost/blog/');
+define('BASE_URL', 'https://angry-elbakyan-yov6c0ovh.liara.run/');
 
 function redirect($url) 
 { 
