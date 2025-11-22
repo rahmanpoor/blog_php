@@ -1,0 +1,1 @@
+<script src="<?= asset('assets/admin/main.js') ?>"></script>
