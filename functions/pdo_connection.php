@@ -1,6 +1,6 @@
 <?php
 
-$config = require_once __DIR__ . '/../../Blog_config/config.php';
+$config = require_once __DIR__ . '/../../blog_config/config.php';
 
 global $pdo;
 try {
