@@ -25,7 +25,7 @@ require_once "functions/helpers.php";
         <article class="featured-post">
           <div class="featured-post-content">
             <div class="featured-post-author">
-              <img src="assets/site/images/author.png" alt="author" />
+              <img src="<?= asset('assets/site/images/author.png') ?>?v=<?= time() ?>" alt="author" />
               <p>By <span>Farzam Asban</span></p>
             </div>
             <a href="single-blog.php" class="featured-post-title">
@@ -39,7 +39,7 @@ require_once "functions/helpers.php";
             </ul>
           </div>
           <div class="featured-post-thumb">
-            <img src="assets/site/images/featured-post.jpg" alt="feature-post-thumb" />
+            <img src="<?= asset('assets/site/images/featured-post.jpg') ?>?v=<?= time() ?>" alt="feature-post-thumb" />
           </div>
         </article>
       </div>
