@@ -2,13 +2,39 @@
 require_once "../../functions/pdo_connection.php";
 require_once "../../functions/helpers.php";
 require_once "../../functions/auth.php";
+//validation
+if (
+    isset($_POST['title']) && $_POST['title'] !== '' &&
+    isset($_POST['cat_id']) && $_POST['cat_id'] !== '' &&
+    isset($_POST['body']) && $_POST['body'] !== '' &&
+    isset($_FILES['image']) && $_FILES['image']['name'] !== ''
+) {
 
-if (isset($_POST['name']) && $_POST['name'] !== '') {
+    // query for fetch category
     global $pdo;
-    $query = "INSERT INTO categories SET  name = ?, created_at = NOW() ;";
+    $query = "SELECT * FROM categories WHERE id = ?;";
     $statement = $pdo->prepare($query);
-    $statement->execute([$_POST['name']]);
-    redirect('/admin/category/index.php');
+    $statement->execute([$_POST['cat_id']]);
+    $category = $statement->fetch();
+
+    //check for true image extension
+    $allowedMimes = ['png', 'jpeg', 'jpg', 'gif'];
+    $imageMime = pathinfo($_FILES['image']['name'], PATHINFO_EXTENSION);
+    if (!in_array($imageMime, $allowedMimes)) {
+        redirect('/admin/post/index.php');
+    }
+
+    //upload image
+    $basePath = dirname(dirname(__DIR__));
+    $image = '/assets/site/images/posts/' . date("Y_m_d_H_i_s") . '.' . $imageMime;
+    $image_upload = move_uploaded_file($_FILES['image']['tmp_name'], $basePath . $image);
+    //insert post
+    if ($category !== false && $image_upload !== false) {
+        $query = "INSERT INTO posts SET  title = ?, cat_id = ?, body = ?, image = ?, created_at = NOW() ;";
+        $statement = $pdo->prepare($query);
+        $statement->execute([$_POST['title'], $_POST['cat_id'], $_POST['body'], $image]);
+    }
+    redirect('/admin/post/index.php');
 } ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -44,9 +70,9 @@ if (isset($_POST['name']) && $_POST['name'] !== '') {
                                     Create Post
                                 </div>
                                 <div class="p-3">
-                                    <form action="create.php" method="post" class="w-full">
+                                    <form action="create.php" method="post" class="w-full" enctype="multipart/form-data">
                                         <div class="flex flex-wrap -mx-3 mb-2">
-                                            <div class="w-full px-3 mb-6 md:mb-0">
+                                            <div class="w-full px-3 mb-6    md:mb-0">
                                                 <label class="block uppercase tracking-wide text-grey-darker text-xs font-light mb-1"
                                                     for="title">
                                                     Title
@@ -60,27 +86,34 @@ if (isset($_POST['name']) && $_POST['name'] !== '') {
                                                     Image
                                                 </label>
                                                 <input class="appearance-none block w-full bg-grey-200 text-grey-darker border border-grey-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-grey"
-                                                    name="image" type="file" accept="image/*">
+                                                    name="image" id="image" type="file" accept="image/*">
                                             </div>
                                             <div class="w-full px-3 mb-6 md:mb-0">
                                                 <label class="block uppercase tracking-wide text-grey-darker text-xs font-light mb-1"
                                                     for="name">
                                                     Category
                                                 </label>
-                                                <select class="appearance-none block w-full bg-grey-200 text-grey-darker border border-grey-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-grey" name="category">
-                                                    <option value="">Select a category</option>
-                                                    <option value="1">Travel</option>
-                                                    <option value="2">Economy</option>
-                                                    <option value="3">Sport</option>
+                                                <select class="appearance-none block w-full bg-grey-200 text-grey-darker border border-grey-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-grey" name="cat_id" id="cat_id">
+                                                    <?php
+                                                    global $pdo;
+                                                    $query = "SELECT * FROM categories;";
+                                                    $statement = $pdo->prepare($query);
+                                                    $statement->execute();
+                                                    $categories = $statement->fetchAll();
+                                                    foreach ($categories as $category) {
+                                                    ?>
+                                                        <option value="<?= $category->id ?>"><?= $category->name ?></option>
+                                                    <?php
+                                                    }
+                                                    ?>
                                                 </select>
                                             </div>
-                                             <div class="w-full px-3 mb-6 md:mb-0">
+                                            <div class="w-full px-3 mb-6 md:mb-0">
                                                 <label class="block uppercase tracking-wide text-grey-darker text-xs font-light mb-1"
                                                     for="body">
                                                     Body
                                                 </label>
-                                                <textarea class="appearance-none block w-full bg-grey-200 text-grey-darker border border-grey-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-grey" name="body" rows="4" placeholder="Body ...">
-                                                </textarea>
+                                                <textarea class="appearance-none block w-full bg-grey-200 text-grey-darker border border-grey-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-grey" name="body" rows="4" placeholder="Body ..."></textarea>
 
                                             </div>
                                         </div>

@@ -1,5 +1,4 @@
-<?php
-
+<?php 
 require_once "../../functions/pdo_connection.php"; 
 require_once "../../functions/helpers.php"; 
 require_once "../../functions/auth.php"; 
@@ -11,13 +10,13 @@ $query = "SELECT * FROM posts WHERE id = ?;";
 $statement = $pdo->prepare($query); 
 $statement->execute([$_GET['post_id']]); 
 $post = $statement->fetch(); 
-$basePath = dirname(dirname(__DIR__)); 
-if (file_exists($basePath . $post->image)) 
+
+ if ($post !== false) 
 { 
-unlink($basePath . $post->image); 
-} 
-$query = "DELETE FROM posts WHERE id = ?;"; 
+$status = ($post->status == 1) ? 0 : 1; 
+$query = "UPDATE posts SET status = ? WHERE id = ?;"; 
 $statement = $pdo->prepare($query); 
-$statement->execute([$_GET['post_id']]); 
+$statement->execute([$status, $_GET['post_id']]); 
 } 
-redirect('/admin/post/index.php'); 
+} 
+redirect('/admin/post/index.php');

@@ -31,7 +31,7 @@ require_once "../../functions/auth.php";
                         <div class="flex flex-1  flex-col md:flex-row lg:flex-row mx-2">
                             <div class="mb-2 border-solid border-gray-300 rounded border shadow-sm w-full">
                                 <div class="bg-gray-200 px-2 py-3 border-solid border-gray-200 border-b">
-                                    Articles
+                                    Post
                                 </div>
                                 <div class="p-3 m-3">
                                     <a href="<?= url('admin/post/create.php') ?>" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2  px-4  rounded">
@@ -44,10 +44,10 @@ require_once "../../functions/auth.php";
                                                 <th class="border  px-4 py-2">#</th>
                                                 <th class="border w-1/12 px-4 py-2">Image</th>
                                                 <th class="border w-2/12 px-4 py-2">Title</th>
-                                                <th class="border w-2/12 px-4 py-2">Category</th>
+                                                <th class="border w-1/12 px-4 py-2">Category</th>
                                                 <th class="border w-5/12 px-4 py-2">Body</th>
                                                 <th class="border w-1/12 px-4 py-2">Status</th>
-                                                <th class="border w-1/12 px-4 py-2">Actions</th>
+                                                <th class="border w-2/12 px-4 py-2">Actions</th>
                                             </tr>
                                         </thead>
                                         <tbody>
@@ -63,7 +63,7 @@ require_once "../../functions/auth.php";
                                                     <td class="border px-4 py-2"><?= $post->id ?></td>
                                                     <td class="border w-1/12 px-4 py-2"><img style="width: 90px;" src="<?= asset($post->image) ?>"></td>
                                                     <td class="border w-2/12 px-4 py-2"><?= $post->title ?></td>
-                                                    <td class="border w-2/12 px-4 py-2"><?= $post->category_name ?></td>
+                                                    <td class="border w-1/12 px-4 py-2"><?= $post->category_name ?></td>
                                                     <td class="border w-5/12 px-4 py-2"><?= $post->body ?></td>
                                                     <?php if ($post->status == 0) { ?>
                                                         <td class="border w-1/12 px-4 py-2">
@@ -75,10 +75,12 @@ require_once "../../functions/auth.php";
                                                         </td>
 
                                                     <?php } ?>
-                                                    <td class="border w-1/12 px-4 py-2">
-                                                        <a href="<?= url('/admin/post/edit.php?cat_id=' . $post->id) ?>" class="bg-teal-300 cursor-pointer rounded p-1 mx-1 text-white">
+                                                    <td class="border w-2/12 px-4 py-2">
+                                                        <a href="<?= url('/admin/post/changeStatus.php?post_id=' . $post->id) ?>" class="bg-teal-300 cursor-pointer rounded p-1 mx-1 text-blue-500">
+                                                            <i class="fas fa-exchange-alt"></i></a>
+                                                        <a href="<?= url('/admin/post/edit.php?post_id=' . $post->id) ?>" class="bg-teal-300 cursor-pointer rounded p-1 mx-1 text-white">
                                                             <i class="fas fa-edit"></i></a>
-                                                        <a href="<?= url('/admin/post/delete.php?cat_id=' . $post->id) ?>" class="bg-teal-300 cursor-pointer rounded p-1 mx-1 text-red-500">
+                                                        <a href="<?= url('/admin/post/delete.php?post_id=' . $post->id) ?>" class="bg-teal-300 cursor-pointer rounded p-1 mx-1 text-red-500">
                                                             <i class="fas fa-trash"></i>
                                                         </a>
                                                     </td>
