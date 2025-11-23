@@ -23,15 +23,15 @@ require_once "functions/helpers.php";
           <div class="featured-post-content">
             <div class="featured-post-author">
               <img src="assets/site/images/author.png" alt="author" />
-              <p>By <span>Mary Astor</span></p>
+              <p>By <span>Farzam Asban</span></p>
             </div>
             <a href="single-blog.php" class="featured-post-title">
-              Every Next Level of Your Life Will Demand
+             Welcome to My Blogger! We're glad to have you here.
             </a>
             <ul class="featured-post-meta">
               <li>
                 <i class="fa fa-clock-o"></i>
-                October 19, 2020 - 3 min read
+                October 19, 2025 - 3 min read
               </li>
             </ul>
           </div>

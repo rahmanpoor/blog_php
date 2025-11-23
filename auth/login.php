@@ -1,3 +1,7 @@
+<?php
+require_once "../functions/pdo_connection.php"; 
+require_once "../functions/helpers.php";
+?>
 <!doctype html>
 <html lang="en">
 

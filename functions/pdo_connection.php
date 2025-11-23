@@ -2,8 +2,6 @@
 
 $config = require_once __DIR__ . '/../../Blog_config/config.php';
 
-
-
 global $pdo;
 try {
     $options = array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION, PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_OBJ);

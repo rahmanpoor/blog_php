@@ -76,7 +76,7 @@ require_once "../../functions/auth.php";
 
                                                     <?php } ?>
                                                     <td class="border w-2/12 px-4 py-2">
-                                                        <a href="<?= url('/admin/post/changeStatus.php?post_id=' . $post->id) ?>" class="bg-teal-300 cursor-pointer rounded p-1 mx-1 text-blue-500">
+                                                        <a href="<?= url('/admin/post/change-status.php?post_id=' . $post->id) ?>" class="bg-teal-300 cursor-pointer rounded p-1 mx-1 text-blue-500">
                                                             <i class="fas fa-exchange-alt"></i></a>
                                                         <a href="<?= url('/admin/post/edit.php?post_id=' . $post->id) ?>" class="bg-teal-300 cursor-pointer rounded p-1 mx-1 text-white">
                                                             <i class="fas fa-edit"></i></a>

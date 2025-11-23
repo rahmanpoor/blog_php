@@ -1,6 +1,8 @@
 <?php
 
-define('BASE_URL', 'http://localhost/blog');
+
+
+define('BASE_URL', $config['base_url']);
 
 function redirect($url) 
 { 

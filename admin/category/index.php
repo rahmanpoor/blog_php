@@ -38,15 +38,15 @@ require_once "../../functions/auth.php";
                                         Create 
                                     </a>
 
-                                    <table class="table-auto w-full rounded mt-6">
-                                        <thead>
-                                            <tr class="flex">
-                                                <th class="border  px-4 py-2">#</th>
-                                                <th class="border w-11/12 px-4 py-2">Name</th>
-                                                <th class="border w-1/12 px-4 py-2">Actions</th>
+                                    <table class="table-auto w-full rounded mt-6 md:table">
+                                        <thead class="md:table-row-group">
+                                            <tr class="block md:table-row  md:border-none  md:rounded-none md:p-0">
+                                                <th class="block md:table-cell border px-4 py-2">#</th>
+                                                <th class="block md:table-cell border px-4 py-2">Name</th>
+                                                <th class="block md:table-cell border px-4 py-2">Actions</th>
                                             </tr>
                                         </thead>
-                                        <tbody>
+                                        <tbody class="md:table-row-group">
                                             <?php
                                             global $pdo;
                                             $query = "SELECT * FROM categories;";
@@ -55,10 +55,10 @@ require_once "../../functions/auth.php";
                                             $categories = $statement->fetchAll();
                                             foreach ($categories as $category) {
                                             ?>
-                                                <tr class="flex">
-                                                    <td class="border  px-4 py-2"><?= $category->id ?></td>
-                                                    <td class="border w-11/12 px-4 py-2"><?= $category->name ?></td>
-                                                    <td class="border w-1/12 px-4 py-2">
+                                                <tr class="block md:table-row  md:border-none  md:rounded-none md:p-0">
+                                                    <td class="block md:table-cell border px-4 py-2"><?= $category->id ?></td>
+                                                    <td class="block md:table-cell border px-4 py-2"><?= $category->name ?></td>
+                                                    <td class="block md:table-cell border px-4 py-2">
                                                         <a href="<?= url('/admin/category/edit.php?cat_id=' . $category->id) ?>" class="bg-teal-300 cursor-pointer rounded p-1 mx-1 text-white">
                                                             <i class="fas fa-edit"></i></a>
                                                         <a href="<?= url('/admin/category/delete.php?cat_id=' . $category->id) ?>" class="bg-teal-300 cursor-pointer rounded p-1 mx-1 text-red-500">
