@@ -1,3 +1,4 @@
+
 <header class="bg-nav">
     <div class="flex justify-between">
         <div class="p-1 mx-3 inline-flex items-center">
@@ -11,7 +12,7 @@
             <a href="#" onclick="profileToggle()" class="text-white p-2 no-underline hidden md:block lg:block">Farzam Asban</a>
             <div id="ProfileDropDown" class="rounded hidden shadow-md bg-white absolute pin-t mt-12 mr-1 pin-r">
                 <ul class="list-reset">
-                    <li><a href="#" class="no-underline px-4 py-2 block text-black hover:bg-grey-light">Logout</a></li>
+                    <li><a href="<?= url('auth/logout.php') ?>" class="no-underline px-4 py-2 block text-black hover:bg-grey-light">Logout</a></li>
                 </ul>
             </div>
         </div>

@@ -26,3 +26,9 @@ function dd($var)
     exit; 
 }
 
+function limitText($text, $limit = 50, $end = '...') {
+    if (mb_strlen($text) > $limit) {
+        return mb_substr($text, 0, $limit) . $end;
+    }
+    return $text;
+}

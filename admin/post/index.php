@@ -57,14 +57,14 @@ require_once "../../functions/auth.php";
                                             $statement = $pdo->prepare($query);
                                             $statement->execute();
                                             $posts = $statement->fetchAll();
-                                            foreach ($posts as $post) {
+                                            foreach ($posts as $key => $post) {
                                             ?>
                                                 <tr class="flex">
-                                                    <td class="border px-4 py-2"><?= $post->id ?></td>
+                                                    <td class="border px-4 py-2"><?= $key + 1 ?></td>
                                                     <td class="border w-1/12 px-4 py-2"><img style="width: 90px;" src="<?= asset($post->image) ?>"></td>
                                                     <td class="border w-2/12 px-4 py-2"><?= $post->title ?></td>
                                                     <td class="border w-1/12 px-4 py-2"><?= $post->category_name ?></td>
-                                                    <td class="border w-5/12 px-4 py-2"><?= $post->body ?></td>
+                                                    <td class="border w-5/12 px-4 py-2"><?= limitText($post->body, 70);?></td>
                                                     <?php if ($post->status == 0) { ?>
                                                         <td class="border w-1/12 px-4 py-2">
                                                             <i class="fas fa-times text-red-500 mx-2"></i>

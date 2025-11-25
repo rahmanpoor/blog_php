@@ -11,260 +11,81 @@ require_once "functions/helpers.php";
 
 <body>
 
-<!-- Navbar Start -->
-<?php include_once('layouts/navbar.php'); ?>
-<!-- Navbar End -->
+  <!-- Navbar Start -->
+  <?php include_once('layouts/navbar.php'); ?>
+  <!-- Navbar End -->
 
-<section class="blog">
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-8 mx-auto">
-        <div class="blog-section-title">
-          <h2>Travel</h2>
-          <p>View the latest news on Travel</p>
-        </div>
-        <article class="blog-post">
-          <div class="blog-post-thumb">
-            <img src="assets/site/images/blog/blog-thum-1.png" alt="blog-thum" />
-          </div>
-          <div class="blog-post-content">
-            <div class="blog-post-title">
-              <a href="single-blog.php">Five Things You Need to Know to Start Your Day</a>
-            </div>
-            <div class="blog-post-meta">
-              <ul>
-                <li>By <a href="about.php">Mary Astor</a></li>
-                <li>
-                  <i class="fa fa-clock-o"></i>
-                  October 19, 2020 - 2 min
-                </li>
-              </ul>
-            </div>
-            <p>
-              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-              nonumy.
-            </p>
-            <a href="single-blog.php" class="blog-post-action">read more <i class="fa fa-angle-right"></i></a>
-          </div>
-        </article>
-        <article class="blog-post">
-          <div class="blog-post-thumb">
-            <a href="single-blog.php">
-              <img src="assets/site/images/blog/blog-thum-2.png" alt="blog-thum" /></a>
-          </div>
-          <div class="blog-post-content">
-            <div class="blog-post-title">
-              <a href="single-blog.php">Five Things You Need to Know to Start Your Day</a>
-            </div>
-            <div class="blog-post-meta">
-              <ul>
-                <li>By <a href="about.php">Mary Astor</a></li>
-                <li>
-                  <i class="fa fa-clock-o"></i>
-                  October 19, 2020 - 2 min
-                </li>
-              </ul>
-            </div>
+  <section class="blog">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 mx-auto">
+          <?php
 
-            <p>
-              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-              nonumy.
-            </p>
-            <a href="single-blog.php" class="blog-post-action">read more <i class="fa fa-angle-right"></i></a>
-          </div>
-        </article>
-        <article class="blog-post">
-          <div class="blog-post-thumb">
-            <a href="single-blog.php">
-              <img src="assets/site/images/blog/blog-thum-3.png" alt="blog-thum" /></a>
-          </div>
-          <div class="blog-post-content">
-            <div class="blog-post-title">
-              <a href="single-blog.php">Five Things You Need to Know to Start Your Day</a>
-            </div>
-            <div class="blog-post-meta">
-              <ul>
-                <li>By <a href="about.php">Mary Astor</a></li>
-                <li>
-                  <i class="fa fa-clock-o"></i>
-                  October 19, 2020 - 2 min
-                </li>
-              </ul>
-            </div>
-
-            <p>
-              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-              nonumy.
-            </p>
-            <a href="single-blog.php" class="blog-post-action">read more <i class="fa fa-angle-right"></i></a>
-          </div>
-        </article>
-        <article class="blog-post">
-          <div class="blog-post-thumb">
-            <a href="single-blog.php">
-              <img src="assets/site/images/blog/blog-thum-4.png" alt="blog-thum" /></a>
-          </div>
-          <div class="blog-post-content">
-            <div class="blog-post-title">
-              <a href="single-blog.php">Five Things You Need to Know to Start Your Day</a>
-            </div>
-            <div class="blog-post-meta">
-              <ul>
-                <li>By <a href="about.php">Mary Astor</a></li>
-                <li>
-                  <i class="fa fa-clock-o"></i>
-                  October 19, 2020 - 2 min
-                </li>
-              </ul>
-            </div>
-
-            <p>
-              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-              nonumy.
-            </p>
-            <a href="single-blog.php" class="blog-post-action">read more <i class="fa fa-angle-right"></i></a>
-          </div>
-        </article>
-        <article class="blog-post">
-          <div class="blog-post-thumb">
-            <a href="single-blog.php">
-              <img src="assets/site/images/blog/blog-thum-5.png" alt="blog-thum" /></a>
-          </div>
-          <div class="blog-post-content">
-            <div class="blog-post-title">
-              <a href="single-blog.php">Five Things You Need to Know to Start Your Day</a>
-            </div>
-            <div class="blog-post-meta">
-              <ul>
-                <li>By <a href="about.php">Mary Astor</a></li>
-                <li>
-                  <i class="fa fa-clock-o"></i>
-                  October 19, 2020 - 2 min
-                </li>
-              </ul>
-            </div>
-
-            <p>
-              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-              nonumy.
-            </p>
-            <a href="single-blog.php" class="blog-post-action">read more <i class="fa fa-angle-right"></i></a>
-          </div>
-        </article>
-        <article class="blog-post">
-          <div class="blog-post-thumb">
-            <a href="single-blog.php">
-              <img src="assets/site/images/blog/blog-thum-6.png" alt="blog-thum" /></a>
-          </div>
-          <div class="blog-post-content">
-            <div class="blog-post-title">
-              <a href="single-blog.php">Five Things You Need to Know to Start Your Day</a>
-            </div>
-            <div class="blog-post-meta">
-              <ul>
-                <li>By <a href="about.php">Mary Astor</a></li>
-                <li>
-                  <i class="fa fa-clock-o"></i>
-                  October 19, 2020 - 2 min
-                </li>
-              </ul>
-            </div>
-
-            <p>
-              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-              nonumy.
-            </p>
-            <a href="single-blog.php" class="blog-post-action">read more <i class="fa fa-angle-right"></i></a>
-          </div>
-        </article>
-        <article class="blog-post">
-          <div class="blog-post-thumb">
-            <a href="single-blog.php">
-              <img src="assets/site/images/blog/blog-thum-7.png" alt="blog-thum" /></a>
-          </div>
-          <div class="blog-post-content">
-            <div class="blog-post-title">
-              <a href="single-blog.php">Five Things You Need to Know to Start Your Day</a>
-            </div>
-            <div class="blog-post-meta">
-              <ul>
-                <li>By <a href="about.php">Mary Astor</a></li>
-                <li>
-                  <i class="fa fa-clock-o"></i>
-                  October 19, 2020 - 2 min
-                </li>
-              </ul>
-            </div>
-            <p>
-              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-              nonumy.
-            </p>
-            <a href="single-blog.php" class="blog-post-action">read more <i class="fa fa-angle-right"></i></a>
-          </div>
-        </article>
-        <div class="blog-post-pagination">
-          <nav aria-label="Page navigation example" class="nav-bg">
-            <ul class="pagination">
-              <li class="page-item">
-                <a class="page-link active" href="#">1</a>
-              </li>
-              <li class="page-item"><a class="page-link" href="#">2</a></li>
-              <li class="page-item"><a class="page-link" href="#">3</a></li>
-              <li class="page-item"><a class="page-link" href="#">4</a></li>
-              <li class="page-item">
-                <a class="page-link" href="#">
-                  <i class="fa fa-angle-right"></i>
-                </a>
-              </li>
-            </ul>
-          </nav>
+          if (isset($_GET['cat_id']) && $_GET['cat_id'] !== '') {
+            global $pdo;
+            $query = "SELECT * FROM categories WHERE id = ? ;";
+            $statement = $pdo->prepare($query);
+            $statement->execute([$_GET['cat_id']]);
+            $category = $statement->fetch();
+            if ($category !== false) {
+          ?>
+              <div class="blog-section-title">
+                <h2><?php echo $category->name; ?></h2>
+                <p>View the latest news on <?php echo $category->name; ?></p>
+              </div>
+          <?php
+            }
+          }
+          ?>
+          <?php
+          if (isset($_GET['cat_id']) && $_GET['cat_id'] !== '') {
+            $query = "SELECT * FROM posts WHERE cat_id = ? AND status = 1 ORDER BY created_at DESC;";
+            $statement = $pdo->prepare($query);
+            $statement->execute([$_GET['cat_id']]);
+            $posts = $statement->fetchAll();
+            foreach ($posts as $post) {
+          ?>
+              <article class="blog-post">
+                <div class="blog-post-thumb">
+                  <img src="<?php echo asset($post->image); ?>" alt="<?php echo $post->title; ?>" />
+                </div>
+                <div class="blog-post-content">
+                  <div class="blog-post-title">
+                    <a href="<?= url('/single-blog.php?post_id=' . $post->id) ?>"><?php echo $post->title; ?></a>
+                  </div>
+                  <div class="blog-post-meta">
+                    <ul>
+                      <li>By <a href="about.php">Farzam Asban</a></li>
+                      <li>
+                        <i class="fa fa-clock-o"></i>
+                        <?php echo date("F d, Y", strtotime($post->created_at)); ?>
+                      </li>
+                    </ul>
+                  </div>
+                  <p>
+                    <?= substr($post->body, 0, 80) ?>
+                  </p>
+                  <a href="<?= url('/single-blog.php?post_id=' . $post->id) ?>" class="blog-post-action">read more <i class="fa fa-angle-right"></i></a>
+                </div>
+              </article>
+          <?php }
+          } ?>
         </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<section class="instagram">
-  <a href="#">
-    <i class="fa fa-instagram" aria-hidden="true"></i>
-    <span>@Mary_Astor</span>
-  </a>
-  <div class="container-fluid">
-    <div class="row">
-      <div class="col-lg-12">
-        <div class="instagram-item">
+  <!-- Instagram Start -->
+  <?php include_once('layouts/instagram.php'); ?>
+  <!-- Instagram End -->
 
-          <div class="instagram-item-thum">
-            <img src="assets/site/images/blog/case-studies-1.png" alt="image">
-          </div>
-          <div class="instagram-item-thum">
-            <img src="assets/site/images/blog/case-studies-2.png" alt="image">
-          </div>
-          <div class="instagram-item-thum">
-            <img src="assets/site/images/blog/case-studies-3.png" alt="image">
-          </div>
-          <div class="instagram-item-thum">
-            <img src="assets/site/images/blog/case-studies-4.png" alt="image">
-          </div>
-          <div class="instagram-item-thum">
-            <img src="assets/site/images/blog/case-studies-5.png" alt="image">
-          </div>
-          <div class="instagram-item-thum">
-            <img src="assets/site/images/blog/case-studies-6.png" alt="image">
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+  <!-- Footer Start -->
+  <?php include_once('layouts/footer.php'); ?>
+  <!-- Footer End -->
 
-<!-- Footer Start -->
-<?php include_once('layouts/footer.php'); ?>
-<!-- Footer End -->
-
-<!-- Script Start -->
-<?php include_once('layouts/script.php'); ?>
-<!-- Script End -->
+  <!-- Script Start -->
+  <?php include_once('layouts/script.php'); ?>
+  <!-- Script End -->
 </body>
 
 </html>

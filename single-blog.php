@@ -11,157 +11,74 @@ require_once "functions/helpers.php";
 
 <body>
 
-<!-- Navbar Start -->
-<?php include_once('layouts/navbar.php'); ?>
-<!-- Navbar End -->
+  <!-- Navbar Start -->
+  <?php include_once('layouts/navbar.php'); ?>
+  <!-- Navbar End -->
 
-<section class="blog-single">
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-2 order-2 order-lg-1">
-        <div class="share-now">
-          <a href="#" class="scrol">Share</a>
-          <div class="sociel-icon">
-            <ul>
-              <li> <a href="#"><i class="fa fa-facebook"></i></a></li>
-              <li> <a href="#"><i class="fa fa-twitter"></i></a></li>
-              <li> <a href="#"><i class="fa fa-instagram"></i></a></li>
-              <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-            </ul>
+  <section class="blog-single">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-2 order-2 order-lg-1">
+          <div class="share-now">
+            <a href="#" class="scrol">Share</a>
+            <div class="sociel-icon">
+              <ul>
+                <li> <a href="#"><i class="fa fa-facebook"></i></a></li>
+                <li> <a href="#"><i class="fa fa-twitter"></i></a></li>
+                <li> <a href="#"><i class="fa fa-instagram"></i></a></li>
+                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+              </ul>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="col-lg-10 order-1 order-lg-2">
-        <article class="single-blog">
-          <a href="#" class="tag">Travel</a>
-          <p class="title">Five Things You Need to Know
-            to Start Your Day</p>
-          <ul class="meta">
-            <li>By <a href="about.php">Mary Astor</a></li>
-            <li>
-              <i class="fa fa-clock-o"></i>
-              October 19, 2020 - 2 min
-            </li>
-          </ul>
-          <img src="assets/site/images/blog/blog-single.png" alt="banner">
+        <div class="col-lg-10 order-1 order-lg-2">
+          <?php
 
-          <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore
-            et dolore magna aliquyam erat, sed diam voluptua. At vero eos accusam et justo duo dolores ea rebum. Stet
-            clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.
-            <br>
-            <br>
+          global $pdo;
+          if (isset($_GET['post_id'])) {
+            $query = "SELECT posts.*,categories.name AS category_name FROM posts JOIN categories ON posts.cat_id=categories.id WHERE posts.id = ?  AND posts.status = 1 ;";
+            $statement = $pdo->prepare($query);
+            $statement->execute([$_GET['post_id']]);
+            $post = $statement->fetch();
+          } else {
+            $post = false;
+          }
+          if ($post !== false) {
+          ?>
+            <article class="single-blog">
+              <a href="<?= url('/category.php?cat_id=' . $post->cat_id) ?>" class="tag"><?php echo $post->category_name; ?></a>
+              <p class="title"><?php echo $post->title; ?></p>
+              <ul class="meta">
+                <li>By <a href="about.php">Farzam Asban</a></li>
+                <li>
+                  <i class="fa fa-clock-o"></i>
+                  <?php echo date("F d, Y", strtotime($post->created_at)); ?>
+                </li>
+              </ul>
+              <img src="<?= asset($post->image) ?>" alt="<?php echo $post->title; ?>">
 
-            consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
-            sed diam voluptua. At vero eos et accusam et justo duo dolores ea rebum. Stet clita kasd gubergren, no sea
-            takimata sanctus est Lorem ipsum dolor sit amet. <br> <br>
-
-            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et
-            dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
-            clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.
-            <br>
-            <br>
-
-            consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
-            sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no
-            sea takimata sanctus est Lorem ipsum dolor sit amet.
-          </p>
-          <h3>Make better business</h3>
-          <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore
-            et dolore magna aliquyam erat, sed diam voluptua. At vero eos accusam et justo duo dolores ea rebum. Stet
-            clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.
-            <br> <br>
-
-            consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
-            sed diam voluptua. At vero eos et accusam et justo duo dolores ea rebum. Stet clita kasd gubergren, no sea
-            takimata sanctus est Lorem ipsum dolor sit amet.
-          </p>
-          <blockquote>
-            <p>"You’ve got to get up every morning with determination if you’re going to go to bed with satisfaction."
-            </p>
-          </blockquote>
-          <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore
-            et dolore magna aliquyam erat, sed diam voluptua. At vero eos accusam et justo duo dolores ea rebum. Stet
-            clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.
-            <br> <br>
-            consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
-            sed diam voluptua. At vero eos et accusam et justo duo dolores ea rebum. Stet clita kasd gubergren, no sea
-            takimata sanctus est Lorem ipsum dolor sit amet.
-          </p>
-          <div class="single-blog-banner">
-            <div class="banner"> <img src="assets/site/images/blog/single-blog.png" alt="banner">
-            </div>
-            <div class="banner"> <img src="assets/site/images/blog/single-blog-2.png" alt="banner">
-            </div>
-          </div>
-          <h3>The Dreamy Factors</h3>
-          <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore
-            et dolore magna aliquyam erat, sed diam voluptua. At vero eos accusam et justo duo dolores ea rebum. Stet
-            clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.
-            <br> <br>
-            consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
-            sed diam voluptua. At vero eos et accusam et justo duo dolores ea rebum. Stet clita kasd gubergren, no sea
-            takimata sanctus est Lorem ipsum dolor sit amet.
-          </p>
-        </article>
-        <div class="blog-single-presentation">
-          <ul>
-            <li> <a href="#" class="tag">PREVIOUS</a>
-              <a href="#" class="title">I Moved Across the Country
-                and Never Looked Back</a>
-              <i class="fa fa-clock-o"></i>
-              October 19, 2020 - 2 min
-            </li>
-            <li> <a href="#" class="tag">Next</a><a href="#" class="title">Every Next Level of Your Life
-                Will Demand a Different</a><i class="fa fa-clock-o"></i>
-              October 19, 2020 - 2 min</li>
-          </ul>
+              <p>
+                <?php echo $post->body; ?>
+              </p>
+            </article>
+          <?php } else { ?>
+            <h1>Post not found</h1>
+          <?php } ?>
         </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
+  <!-- Instagram Start -->
+  <?php include_once('layouts/instagram.php'); ?>
+  <!-- Instagram End -->
 
-<section class="instagram">
-  <a href="#">
-    <i class="fa fa-instagram" aria-hidden="true"></i>
-    <span>@Mary_Astor</span>
-  </a>
-  <div class="container-fluid">
-    <div class="row">
-      <div class="col-lg-12">
-        <div class="instagram-item">
+  <!-- Footer Start -->
+  <?php include_once('layouts/footer.php'); ?>
+  <!-- Footer End -->
 
-          <div class="instagram-item-thum">
-            <img src="assets/site/images/blog/case-studies-1.png" alt="image">
-          </div>
-          <div class="instagram-item-thum">
-            <img src="assets/site/images/blog/case-studies-2.png" alt="image">
-          </div>
-          <div class="instagram-item-thum">
-            <img src="assets/site/images/blog/case-studies-3.png" alt="image">
-          </div>
-          <div class="instagram-item-thum">
-            <img src="assets/site/images/blog/case-studies-4.png" alt="image">
-          </div>
-          <div class="instagram-item-thum">
-            <img src="assets/site/images/blog/case-studies-5.png" alt="image">
-          </div>
-          <div class="instagram-item-thum">
-            <img src="assets/site/images/blog/case-studies-6.png" alt="image">
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- Footer Start -->
-<?php include_once('layouts/footer.php'); ?>
-<!-- Footer End -->
-
-<!-- Script Start -->
-<?php include_once('layouts/script.php'); ?>
-<!-- Script End -->
+  <!-- Script Start -->
+  <?php include_once('layouts/script.php'); ?>
+  <!-- Script End -->
 </body>
 
 </html>
